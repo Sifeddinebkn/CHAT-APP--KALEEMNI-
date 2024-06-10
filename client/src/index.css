@@ -1,0 +1,214 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #100720;
+
+}
+  .background{
+  width: 100vw; /* Make background container full width */
+  height: 100vh; /* Make background container full height */
+  display: table-cell; /* Make the container behave like a table cell */
+
+  
+}  
+
+  
+
+h1{
+  background: -webkit-linear-gradient(#4f9bff, #d058ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ color: transparent;
+ width: 1200px;
+ margin: auto;
+ font-size:80px;
+ font-weight: 500px;
+
+ 
+}
+.app-logo{
+  width: 100px;
+  padding-top: 30px;
+  margin-left: 500px;
+  
+}
+p{
+width: 1700px;
+  font-size: 25px;
+    color: #fff8f8; /* Adjust color as needed */
+    margin: auto;
+    padding-top: 10px;
+}
+img{
+   width: 55%;
+   max-width: 1000px;
+   height: 70%;
+   border-radius: 10px; /* Rounded corners */
+   display: flex;
+   padding-left: 20px;
+}
+
+
+.form-card {
+  width: 35%;
+  height: 55%;
+  padding: 30px 100px 40px 90px;
+  margin-left: 100px;
+  margin-top: 320px;
+  position: absolute;
+  top:-20px;
+  left: 1000px;
+  background: linear-gradient(#100720, #100720) padding-box,
+              linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  backdrop-filter: blur(20px);
+  
+  
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-title {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #62cdff;
+  font-family: fantasy;
+}
+
+.form-subtitle {
+  font-size: 18px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-family: monospace;
+  overflow: hidden;
+
+}
+
+
+.auth {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  
+
+}
+
+.auth-labpas{
+  position: absolute;
+  left: 18px;
+  font-size: 14px;
+  color: rgb(204, 200, 200);
+  width: 100%;
+
+
+
+}
+.auth-label {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  font-size: 14px;
+  color: rgb(204, 200, 200);
+  width: 100%;
+  
+}
+
+.auth-input {
+  background-color: #ccc;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 24px 18px 15px 18px;
+  width: calc(100% - 18px - 18px);
+  margin-bottom: 12px;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  margin: 30px 0;
+}
+.auth-input:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 7px 7px 50px #969696,
+             -7px -7px 50px #ffffff;
+}
+.auth-inputpas{
+  background-color: #ccc;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  padding: 24px 18px 15px 18px;
+  width: calc(100% - 18px - 18px);
+  margin-bottom: 12px;
+  box-shadow: inset 2px 5px 10px rgba(0,0,0,0.3);
+  transition: 300ms ease-in-out;
+  margin: 30px 0;
+
+
+}
+.auth-inputpas:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 7px 7px 50px #969696,
+             -7px -7px 50px #ffffff;
+}
+
+.auth-button {
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 40px;
+  border: none;
+  position: relative;
+  background: #100720;
+  font-weight: 600;
+  transition: 0.1s;
+}
+
+.auth-button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  filter: blur(15px);
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.auth-button:active {
+  transform: scale(0.9) rotate(3deg);
+  background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+  transition: 0.2s;
+}
